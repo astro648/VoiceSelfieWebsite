@@ -13,8 +13,9 @@
 <body>
     <div class="container">
     <center>
+        <a id="link" download="myselfie.png"></a>
         <h1>Voice Selfie App 
-
+        <img src="selfie.jpeg" id="logo_img">
         </h1>
         <hr>
         <h4 style="color:red;">Please press allow as soon as popup comes. After you give a voice command</h4>
@@ -22,9 +23,9 @@
         <div class="form-group">
             <h3>Say "take my selfie"</h3>
             <label>Your voice output : </label>
-
+            <textarea class="form-control" id="textbox" readonly="true"></textarea>
         </div>
-
+        <button class="btn btn-primary" onclick="start()">Start</button>
         <p>Press the Start button</p>
 
         <label>Your webcam : </label>
