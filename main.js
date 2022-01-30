@@ -17,3 +17,9 @@ function speak(){
     var utter_this = new SpeechSynthesisUtterance(speak_data);
     synth.speak(utter_this);
 }
+Webcam.set({
+    width: 360,
+    height: 250,
+    image_format: 'png',
+    png_quality: 90
+});
