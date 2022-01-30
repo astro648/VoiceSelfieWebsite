@@ -16,6 +16,7 @@ function speak(){
     var speak_data = document.getElementById("textbox").value;
     var utter_this = new SpeechSynthesisUtterance(speak_data);
     synth.speak(utter_this);
+    Webcam.attach(camera);
 }
 Webcam.set({
     width: 360,
