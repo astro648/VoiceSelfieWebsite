@@ -12,5 +12,5 @@ recognition.onresult = function(event){
 }
 function speak(){
     var synth = window.speechSynthesis;
-    
+    var speak_data = document.getElementById("textbox").value;
 }
