@@ -10,3 +10,6 @@ recognition.onresult = function(event){
     console.log(content)
     document.getElementById("textbox").innerHTML=content;
 }
+function speak(){
+    
+}
