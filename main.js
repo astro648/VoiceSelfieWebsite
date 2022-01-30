@@ -11,5 +11,6 @@ recognition.onresult = function(event){
     document.getElementById("textbox").innerHTML=content;
 }
 function speak(){
+    var synth = window.speechSynthesis;
     
 }
