@@ -9,7 +9,10 @@ recognition.onresult = function(event){
     var content = event.results[0][0].transcript;
     console.log(content)
     document.getElementById("textbox").innerHTML=content;
-    speak();
+    if(content == "take my selfie"){
+        console.log("Taking selfie");
+        speak();
+    }
 }
 function speak(){
     var synth = window.speechSynthesis;
