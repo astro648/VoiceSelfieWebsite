@@ -17,6 +17,10 @@ recognition.onresult = function(event){
         console.log("Taking selfie");
         speak();
     }
+    else if(content == "Take my selfie."){
+        console.log("Taking selfie");
+        speak();
+    }
 }
 function speak(){
     var synth = window.speechSynthesis;
