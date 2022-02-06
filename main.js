@@ -20,6 +20,9 @@ function speak(){
     var utter_this = new SpeechSynthesisUtterance(speak_data);
     synth.speak(utter_this);
     Webcam.attach(camera);
+    setTimeout(function(){
+        take_snapshot();
+    },5000);
 }
 function take_snapshot(){
     Webcam.snap(function(data_uri){
