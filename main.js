@@ -21,6 +21,11 @@ function speak(){
     synth.speak(utter_this);
     Webcam.attach(camera);
 }
+function take_snapshot(){
+    Webcam.snap(function(data_uri){
+        document.getElementById("result").innerHTML = '<img id="selfie_image" src="'+data_uri+'">';
+    });
+}
 Webcam.set({
     width: 360,
     height: 250,
